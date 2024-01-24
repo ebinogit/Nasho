@@ -2,18 +2,18 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/game2.css">
+    <link rel="stylesheet" href="../css/game.css">
     <title>社長になろう</title>
 </head>
 <body>
     <div class="user-box">
-        <p class="name2"></p>
-        <div class="user-contents contents2">
+        <p class="name1"></p>
+        <div class="user-contents contents1">
             <p class="contents">&emsp;資産：￥<span>1000</span></p>
             <p class="contents employee">社員数：<span class="employee1"></span><span class="employee2"></span><span class="employee3"></span><span class="employee4"></span><span class="employee5"></span></p> 
         </div>
-        <p class="name1"></p>
-        <div class="user-contents contents1">
+        <p class="name2"></p>
+        <div class="user-contents contents2">
             <p class="contents">&emsp;資産：￥<span>1000</span></p>
             <p class="contents employee">社員数：<span class="employee1"></span><span class="employee2"></span><span class="employee3"></span><span class="employee4"></span><span class="employee5"></span></p> 
         </div>
@@ -31,7 +31,7 @@
             </div>
             <p class="button1-text p hide">カードを一枚引く。スタートプレイヤーになる。</p>
         </div>
-        <div>
+        <div>   
             <button class="work-button2 button">鉱山</button>
             <div class="use use2 hide">
                 <p>鉱山を利用しますか？</p>
@@ -66,19 +66,22 @@
         </div>
     </div>
     <button class="clear"></button>
-<div class="hand">
+    <div class="stage">
+        <button class="stage-button hide"></button>
+    </div>
+    <div class="hand">
         <div>
             <p class="build-text1 hide">建築するカードを選択してください</p>
             <p class="build-text2 hide">コストとして、捨てるカードを選択してください</p>
         </div>
-    <div class="hand-card">
-        <div class="card hide">
+        <div class="hand-card">
+            <div class="card hide">
                 <button class="button">
-            <p class="cost"></p>
-            <p class="contents"></p>
-            <p class="value"></p>
-        </button>
-<p class="p hide"></p>
+                    <p class="cost"></p>
+                    <p class="contents"></p>
+                    <p class="value"></p>
+                </button>
+                <p class="p hide"></p>
             </div>
         </div>
         <p class="error hide">コストの枚数が異なります</p>
@@ -87,5 +90,5 @@
             <button class="build-button2 hide">決定</button>
         </div>
     </div>
-    <script src="../js/game2.js"></script>
+    <script src="../js/game.js"></script>
 </body>

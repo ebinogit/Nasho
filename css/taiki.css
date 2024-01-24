@@ -1,0 +1,72 @@
+
+h1{
+    margin: 100px 0;
+    color: rgb(255, 0, 0);
+    text-shadow: 3px 3px 3px black;
+    font-size: 40px;
+    font-family: "myFont";
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+/* .center{
+    text-align:center;
+} */
+.name-box{
+    display: flex;
+    margin: 20px auto;
+}
+p{
+    margin:0px 30px 0px 0px;
+    background-color: rgb(253, 143, 143);
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    font-size: 40px;
+    font-weight:600;
+    display: none;
+}
+.leave-button{
+    height: 60px;
+    line-height: 60px;
+    width: 90px;
+    font-size:30px;
+    display: none;
+}
+.error{
+    color: red;
+    display: none;
+}
+.button{
+    background-color: rgb(253, 143, 143);
+    border-radius: 15px;
+    border: 0px;
+    font-weight:500;
+}
+.button:active{
+    background-color: red;
+}
+input{
+    text-align:center;
+    border-radius: 20px; 
+    padding:10px 15px;
+    font-size: 30px;
+    font-weight: 600;
+    height: 46px;
+}
+#in-button{
+    width: 140px;
+    height: 70px;
+    line-height: 70px;
+    margin-left: 20px;
+    font-size: 35px;
+}
+#ok-button,#start-button{
+    width: 190px;
+    height: 90px;
+    line-height: 90px;
+    margin: 30px;
+    font-size: 40px;
+}
