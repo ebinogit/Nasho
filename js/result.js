@@ -1,20 +1,29 @@
 //プレイヤー名
-var name1=localStorage.getItem("name1");
 var name2=localStorage.getItem("name2");
-$(".name1").text(name1);
+var name3=localStorage.getItem("name3");
+var name4 = localStorage.getItem("name4");
+var name5 = localStorage.getItem("name5");
+
 $(".name2").text(name2);
+$(".name3").text(name3);
+$(".name2").text(name4);
+$(".name3").text(name5);
 
 //社員数
 var employee1=localStorage.getItem("employee1");
 var employee2=localStorage.getItem("employee2");
+var employee1 = localStorage.getItem("employee3");
+var employee2 = localStorage.getItem("employee4");
 
 //得点計算
 var a=parseInt($(".test").text());
 var b=parseInt($(".test2").text());
 var c=parseInt($(".test3").text());
+
 var d=(a+b-c*3);
 
 $(".score").text(d);
+
 // alert(d);
 
 const colors = [
@@ -23,6 +32,7 @@ const colors = [
     '#0abdc6',
     '#133e7c'
 ];
+
 
 createSquare = () => {
     const section = document.querySelector('section');
