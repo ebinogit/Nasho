@@ -1,15 +1,31 @@
 body{
     margin-top: 50px;
+    overflow: hidden;
+    height: 100vh;
+    background: #091833;
 }
 .center{
     display: flex;
     justify-content: center;
 }
+
 .title{
     color: cadetblue;
-    text-shadow: 2px 2px 4px black;
-    font-size: 55px;
+    text-shadow: 2px 2px 4px white;
+    font-size: 50px;
+    margin:10px 0 0 600px;
 }
+.box {
+    margin: left;
+    width: 150px;
+    height: 70px;
+    background: linear-gradient(to bottom, #6666ff, #0059b3);
+}
+
+p{
+    color: #fff;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -27,6 +43,36 @@ body{
     font-weight: 1000;
 }
 .rank2{
-    color: blue;
+    color: pink;
     font-weight: 700;
+}
+section {
+    height: 100vh;
+}
+
+span {
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
 }
