@@ -6,8 +6,8 @@ var name5 = localStorage.getItem("name5");
 
 $(".name2").text(name2);
 $(".name3").text(name3);
-$(".name2").text(name4);
-$(".name3").text(name5);
+$(".name4").text(name4);
+$(".name5").text(name5);
 
 //社員数
 var employee1=localStorage.getItem("employee1");
@@ -56,3 +56,25 @@ createSquare = () => {
 }
 
 setInterval(createSquare, 150);
+
+
+
+$(document).ready(function () {
+    // ボタンがクリックされたときの処理
+    $('.button').click(function () {
+        var buttonId = $(this).attr('id');
+        // 対応するモーダルの内容を取得
+        var modalContent = $('#' + buttonId + '-modal-content').html();
+        // モーダルに内容を設定
+        $('.modal').html(modalContent);
+        // モーダルを表示
+        $('#modal-container').removeAttr('class').addClass(buttonId);
+        $('body').addClass('modal-active');
+    });
+
+    // モーダルの背景がクリックされたときの処理
+    $('#modal-container').click(function () {
+        $(this).addClass('out');
+        $('body').removeClass('modal-active');
+    });
+});
