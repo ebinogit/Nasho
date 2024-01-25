@@ -15,6 +15,7 @@ var employee2=localStorage.getItem("employee2");
 var employee1 = localStorage.getItem("employee3");
 var employee2 = localStorage.getItem("employee4");
 
+
 //得点計算
 var a=parseInt($(".test").text());
 var b=parseInt($(".test2").text());
